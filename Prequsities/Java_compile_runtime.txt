@@ -1,0 +1,19 @@
+First the .java file will be compiled by the compiler "javac" present in the JDK. 
+it will be converted into .class file known as byte code
+
+this byte code then will be taken to next steps 
+     1. class loader , where the it reads the .class file and generates the binary data 
+     this .class file will be created an object where it is saved in the heap . 
+
+     2. Linking : JVM checkes the byte code(.class file) for any possible errors 
+        Allocates the space for class variables 
+        the referenced variables are now replaced with direct heap referenced values 
+
+    3. Initialazation : All static variables are now assigned with their in the  code 
+
+    4. interpreter : Line by line code interpretaiton and repeated methods and functions are interpreted again and again 
+
+    5. JIT compiler : The repeated methods are now assigned to direct machine code so that repeating will be reduced and code excution is faster
+    
+             Garbage collector : it is used to remove unused and unassigned data . It is triggered automatically .
+

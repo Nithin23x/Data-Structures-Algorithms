@@ -1,0 +1,20 @@
+JDK vs JRE vs JVM vs JIT 
+
+JDK : Java development kit 
+      JRE + development tools 
+      provides Environment and development tools to create , develop and run the Java program 
+      it includes JRE which is used to run the Java Program 
+      it has compiler named "javac", archiver - "jar" , doc generator - javadoc
+      It also has an interpreter and a loader 
+
+    JRE : Java Runtime Environment 
+          JVM + library classes 
+          It is an installation package that provides Environment only for runnig the program .
+          It consists of Deployment technologies , Base libraries , JVM
+          After we get .class file , the next things happen at run time i.e at JRE . 
+            1. Class loader loads the all the classes needed to execute the program 
+            2.JVM sends code to byte code verifier to check for the code format 
+
+        JVM : Java Virtual Machine 
+
+            JIT : Just in Time compiler 

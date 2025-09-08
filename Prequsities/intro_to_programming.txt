@@ -1,0 +1,35 @@
+Static vs Dynamic Programming languages 
+
+Staic : Performs type checking at compile time 
+        Errors will show at compile time  .    
+        Declare datatypes before using it . More control over code
+
+        ex : int a = "Computer" -- Error at compile time 
+
+
+Dynamic : Performs type checking at run time 
+          Errors may show at runtime 
+          No need to declare the datatypes of variables 
+
+          ex : a = "Laptop"
+               a = 10       --- No Error 
+
+There are two types of memory in memory management 
+    a.Stack 
+    b.Heap 
+
+    The variables are stored in type of objects . it means every variable assigned is an object referenced by the variable name 
+
+    a.Stack : The stack memory consists of the variable namespace/referenced variable where it stores the names of the variables .
+              And these variables point to the value of the variable known as object
+    
+    b.Heap  : The heap memory consists of the variable's value stored as object . Multiple variable names can point to single object in heap memory
+
+    ex : a = [1,3,4,5]
+         b = a 
+         c = a      -- Here a,b,c are namespaces in stack memory all pointing to the [1,3,4,5] object in heap memory
+
+         if b[1] =7 -- Here we are not only changing the value of b[1]th element but also the variables a and c are pointing to the same object
+                        so the change will be reflected in variable a and c also 
+
+    
