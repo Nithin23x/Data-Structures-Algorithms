@@ -1,5 +1,4 @@
-import java.io.File;
-import java.io.FileInputStream;
+
 import java.util.Scanner;
 
 public class First {
@@ -76,13 +75,52 @@ public class First {
     // 1. IF two datatypes are compatible to each other 
     // 2. if the receiving data type is on higher end than the input end .. 
 
-    // for example if float datatype is  higher than int . so even if we give an int type to a float input . it will acccept 
+    // for example the float datatype is  higher than int . so even if we give an int type to a float input . it will acccept 
     // But it wil not happen other way around.. 
 
     // IF we want to convert non compatible data types then it is "Type Casting/ Explicit conversion"
     // example int to float etc , 
     // int a = (int)(55.533f) it gives the integral part of the number
+    // int a = 20 
+    // byte b = (int)(a) -- casted into byte 
 
     // int a = 'n' //sout .it gives the ASCII value
-    // 
+
+    // Automatic Type promition in expresssions 
+    //  int x = 257
+    // byte y = (int)(x) here byte will take only numbers upto 256 but here it's 257 so it will do % operation with 257 by 256 and assigns the remainder
+
+    // byte a = 40;
+    // byte b = 5
+    // byte c = 10 
+
+    // int d = a * b / c -- here the bytes are atuomatically promotoed to the integer datatype while calculating  the expression without Explicit mention
+
+    // byte p = 20 
+    // p = p*45 ; -- this gives error beacuse the operations/expression is promoting them int but the assigning variable is still byte 
+    // int z = p * 34 -- this will not give error becasue the reciving variable is int . . 
+
+
+// Type promotion rules in java : 
+    // All the byte,short,char operations are promoted to int 
+    // if any one of the operand is long then whole operation is long datatype
+    //if any one of the operand float expression then to  float , double then double 
+    // all the types are converged to single datatype of which is larger/higher 
+
+    //example 
+    // byte b = 23 ;
+    // char c = '4';
+    // short s = 1024;
+    // int i = 40000; 
+    // float f = 55.342f ;
+    // double d = 0.4553245 ;
+
+    //result = (b * f) + (i/c) - (s * d ) ;
+
+    // byte * float = float (1)
+    // int / chat = int (2)
+    // short * double = double  (3)
+
+    // result = float + int - double 
+    // result = double .... final result is double data type .
 
