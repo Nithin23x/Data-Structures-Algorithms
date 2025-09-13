@@ -1,11 +1,11 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Functions {
+public class Functions_and_Arrays {
 
     public static void main(String[] args ) {
         int a = 20 ; 
-        int b = 30 ; 
+        // int b = 30 ; 
 
         mind(a) ;
         System.out.println(a +" after mind func");
@@ -62,6 +62,15 @@ public class Functions {
 
 // In java , for arguements the value are passed by only value for primitive data types 
 // it means the arguements in functions will only refer to the primitive datatypes , when changes occur they remain to function level and does not reflect in main code.
+    // ex: int a = 20 ; 
+    // static void mind(int a) {
+    //     System.out.println(a + "x"); 
+    //     a = 30;
+    //     System.out.println(a + "x");
+    // }
+    //  mind(a) ;
+    //  System.out.println(a +" after mind function"); output is 20 
+    //Here we tried to change the value of a in the funtion but the value of a doesn't change 
 
 //for datatypes like Array , they are passed by value reference , so when array is passed as arguement to functional block 
 // the changes made in functional block are reflected everywhere ... 
